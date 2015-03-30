@@ -3,8 +3,8 @@ var jsface                  = require('jsface'),
     vm                      = require('vm'),
     ErrorHandler            = require('../utilities/ErrorHandler'),
     AbstractResponseHandler = require('./AbstractResponseHandler'),
-    jsdom                   = require("jsdom"),
-    _jq                     = null,
+    window                  = require("jsdom-nogyp").jsdom().parentWindow,
+    _jq                     = require("jquery")(window),
     _lod                    = require("lodash"),
     Helpers                 = require('../utilities/Helpers'),
     log                     = require('../utilities/Logger'),
@@ -24,14 +24,6 @@ require('sugar');
 var TestResponseHandler = jsface.Class(AbstractResponseHandler, {
     $singleton: true,
     throwErrorOnLog: false,
-
-    main: function() {
-        jsdom.env("<html><body></body></html>", function (err, window) {
-            _jq = require('jquery')(window);
-        });
-    },
-
-
     // function called when the event "requestExecuted" is fired. Takes 4 self-explanatory parameters
     _onRequestExecuted: function(error, response, body, request) {
         var results = this._runTestCases(error, response, body, request);
