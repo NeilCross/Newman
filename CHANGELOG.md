@@ -1,5 +1,8 @@
 ##CHANGELOG
 
+####1.2.15.1 (March 30, 2015)
+* Roll back to nogyp to support building without installing visual studio (requires node ~0.10.36)
+
 ####1.2.15 (March 19, 2015)
 * Support for authentication helpers (Basic, Digest, OAuth1.0)
 
