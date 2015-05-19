@@ -1,5 +1,14 @@
-# Newman [![Build Status](https://travis-ci.org/a85/Newman.svg?branch=master)](https://travis-ci.org/a85/Newman) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-[![NPM](https://nodei.co/npm/newman.png?downloads=true)](https://nodei.co/npm-dl/newman/)
+# Newman [![Build Status](https://travis-ci.org/NeilCross/Newman.svg?branch=master)](https://travis-ci.org/NeilCross/Newman) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+## Unofficial Fork
+This is an unofficial fork of [Newman](https://github.com/a85/Newman).  It is intended to be the most recent commit of Newman, rolling back the dependancy on jsdom, in favour of the prevoiusly used jsdom-nogyp.  This enables execution on Windows without requiring a Visual Studio install. It's not tested thoroughly at all and works for me with node 0.10.36.
+
+To install the latest version, run the following command.
+```bash
+$ npm install https://github.com/NeilCross/Newman/archive/master.tar.gz
+```
+
+_The following is the original content of the Newman readme.md_
 
 Newman is a command-line collection runner for [Postman](http://getpostman.com). It allows you to effortlessly run and test a Postman collection directly from the command-line. It is built with extensibility in mind so that you can easily integrate it with your continuous integration servers and build systems.
 
