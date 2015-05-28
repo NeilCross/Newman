@@ -1,14 +1,14 @@
 {
   "name": "newman",
-  "version": "1.2.16_nogyp",
+  "version": "1.2.16",
   "author": "Abhijit Kane & Arjun Variar & Prakhar Srivastav",
   "main": "Newman",
-  "homepage": "https://github.com/a85/Newman",
-  "bugs": "https://github.com/a85/Newman/issues",
+  "homepage": "https://github.com/NeilCross/Newman-nogyp",
+  "bugs": "https://github.com/NeilCross/Newman-nogyp/issues",
   "description": "Command-line utility for Postman",
   "repository": {
     "type": "git",
-    "url": "git://github.com/a85/Newman.git"
+    "url": "git://github.com/NeilCross/Newman-nogyp.git"
   },
   "contributors": [
     {
@@ -48,7 +48,7 @@
     "commander": "2.x.x",
     "dot": "1.0.3",
     "jquery": "2.1.1",
-    "jsdom-nogyp": "*",
+    "jsdom-nogyp": "0.8.3",
     "jsface": "2.2.x",
     "json5": "^0.4.0",
     "lodash": "^3.3.0",

@@ -1,11 +1,11 @@
-# Newman [![Build Status](https://travis-ci.org/NeilCross/Newman.svg?branch=master)](https://travis-ci.org/NeilCross/Newman) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# Newman-nogyp [![Build Status](https://travis-ci.org/NeilCross/Newman-nogyp.svg?branch=master)](https://travis-ci.org/NeilCross/Newman-nogyp) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## Unofficial Fork
 This is an unofficial fork of [Newman](https://github.com/a85/Newman).  It is intended to be the most recent commit of Newman, rolling back the dependancy on jsdom, in favour of the prevoiusly used jsdom-nogyp.  This enables execution on Windows without requiring a Visual Studio install. It's not tested thoroughly at all and works for me with node 0.10.36.
 
 To install the latest version, run the following command.
 ```bash
-$ npm install https://github.com/NeilCross/Newman/archive/master.tar.gz
+$ npm install https://github.com/NeilCross/Newman-nogyp/archive/master.tar.gz
 ```
 
 _The following is the original content of the Newman readme.md_
